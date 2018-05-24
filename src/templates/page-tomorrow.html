@@ -1,0 +1,32 @@
+<div class="tomorrow js-page">
+   <div class="tomorrow__title">
+
+   </div>
+   <div class="tomorrow__main">
+
+   </div>
+</div>
+
+ <script id="tomorrow-header-template" type="text/x-handlebars-template">
+     <div class="tomorrow__header-block">
+
+         <p class="tomorrow__day">{{weekday}}</p>
+         <p class="tomorrow__date">{{date}}</p>
+
+      </div>
+</script>
+
+<script id="tomorrow-template" type="text/x-handlebars-template">
+     <div class="tomorrow__block">
+          {{#each this}}
+                <div class="tomorrow__str">
+                    <p class="tomorrow__time">{{title}}</p>
+                    <p class="tomorrow__precip">
+                        <canvas class="{{icon}}" width="19" height="19"></canvas>
+                    </p>
+                    <p class="tomorrow__temp">{{temperature}}&deg;С</p>
+                    <p class="tomorrow__text">{{description}}</p>
+                </div>
+          {{/each}}
+      </div>
+</script>

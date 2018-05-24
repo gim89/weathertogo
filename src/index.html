@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Weather To Go!</title>
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,500" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body class="color__back-ground">
+    <div class="wrapper">
+
+        <header class="header">
+            //= templates/header.html
+            <div class="header__form">
+            //= templates/search.html
+            </div>
+            <div class="header__nav">
+                //= templates/nav.html
+                <div class="header__button">
+                //= templates/button-way.html
+                </div>
+            </div>
+            <section class="header-visual">
+                //= templates/header-visual.html
+            </section>
+        </header>
+
+        <div class="page">
+            //= templates/page.html
+            //= templates/page-today.html
+            //= templates/page-tomorrow.html
+            //= templates/page-weekend.html
+            //= templates/page-add-sity.html
+            //= templates/page-wayfull.html
+        </div>
+        <footer class="footer">
+            //= templates/footer.html
+        </footer>
+    </div>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBxgSIgtRrVLvndTS6L5yfQgR5i5sy40K8&libraries=places&language=ru"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.min.js"></script>
+    <script src="https://darkskyapp.github.io/skycons/skycons.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.5.1/moment.min.js"></script>
+    <script src="https://darksky.net/js/lib/pikaday.js"></script>
+    <script src="scripts.min.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,32 @@
+<div class="today js-page js-block">
+   <div class="today__title">
+
+   </div>
+   <div class="today__main">
+
+   </div>
+</div>
+
+<script id="today-template" type="text/x-handlebars-template">
+     <div class="today__block">
+          {{#each this}}
+                <div class="today__str">
+                    <p class="today__time">{{title}}</p>
+                    <p class="today__precip">
+                        <canvas class="{{icon}}" width="19" height="19"></canvas>
+                    </p>
+                    <p class="today__temp">{{temperature}}&deg;С</p>
+                    <p class="today__text">{{description}}</p>
+                </div>
+          {{/each}}
+      </div>
+</script>
+
+<script id="today-header-template" type="text/x-handlebars-template">
+     <div class="today__header-block">
+
+         <p class="today__day">{{weekday}}</p>
+         <p class="today__date">{{date}}</p>
+
+      </div>
+</script>

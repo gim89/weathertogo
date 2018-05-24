@@ -1,0 +1,24 @@
+<div class="wayfull js-page">
+
+</div>
+
+<script id="wayfull-template" type="text/x-handlebars-template">
+
+          <div class="wayfull__title">
+              <p class="wayfull__day">{{toDay.header.weekday}}</p>
+              <p class="wayfull__date">{{toDay.header.date}}</p>
+              <p class="wayfull__city">{{sityName}}</p>
+          </div>
+
+          {{#each this.toDay.body}}
+                <div class="wayfull__str">
+                    <p class="wayfull__time">{{title}}</p>
+                    <p class="wayfull__precip">
+                        <canvas class="{{icon}}" width="19" height="19"></canvas>
+                    </p>
+                    <p class="wayfull__temp">{{temperature}}&deg;С</p>
+                    <p class="wayfull__text">{{description}}</p>
+                </div>
+          {{/each}}
+
+</script>
